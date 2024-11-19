@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:each="car : ${cars}" th:text="${car.toString()}"></p>
+<a href="/index">Back</a>
+</body>
+</html>
