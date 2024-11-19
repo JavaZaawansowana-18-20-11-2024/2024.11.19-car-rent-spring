@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class Car {
+    private int id;
     private String brand;
     private String model;
     private double price;
@@ -15,7 +16,7 @@ public class Car {
     private String plate;
     private boolean rent;
 
-    public Car(String brand, String model, double price, int year, String plate) {
-        this(brand, model, price, year, plate,false);
+    public Car(int id,String brand, String model, double price, int year, String plate) {
+        this(id, brand, model, price, year, plate,false);
     }
 }
