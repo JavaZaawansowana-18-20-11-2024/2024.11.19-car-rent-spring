@@ -47,5 +47,6 @@ public class CommonController {
     public String rent(@RequestParam("plate") String plate, Model model) {
         model.addAttribute("result", this.carService.rentCar(plate));
         return "rent-result";
+        //return "redirect:/index";
     }
 }

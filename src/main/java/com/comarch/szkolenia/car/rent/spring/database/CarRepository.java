@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
 public class CarRepository implements CarRepositoryInterface {
     @Getter
     private final List<Car> cars = new ArrayList<>();
